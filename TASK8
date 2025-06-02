@@ -1,0 +1,17 @@
+open class Person(val name: String, val age: Int) {
+    open fun displayInfo() {
+        println("Name: $name, Age: $age")
+    }
+}
+
+class Student(name: String, age: Int, val grade: String) : Person(name, age) {
+    override fun displayInfo() {
+        super.displayInfo()
+        println("Grade: $grade")
+    }
+}
+
+fun main() {
+    val student = Student("Ayman", 21, "A")
+    student.displayInfo()
+}
