@@ -1,0 +1,4 @@
+fun main() {
+    val multiply: (Int, Int) -> Int = { a, b -> a * b }
+    println("Product of 4 and 5 is: ${multiply(4, 5)}")
+}
