@@ -1,0 +1,12 @@
+fun main() {
+    print("Enter your name: ")
+    val name = readLine()
+    print("Enter your age: ")
+    val age = readLine()?.toIntOrNull()
+
+    if (name != null && age != null) {
+        println("Hello $name, you are $age years old!")
+    } else {
+        println("Invalid input.")
+    }
+}
